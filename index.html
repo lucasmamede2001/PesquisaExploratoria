@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <div id="link0">
+            <div class="formulario1">
+                <div class="perguntas">
+                    <label>Preencha este formulário para seguir:</label><br><br>
+
+                    <input type="text" name="Nome" id="nome" required autofocos placeholder="Nome....">
+                    <br>
+
+                    <input type="email" name="email" id="email" required placeholder="email....">
+                    <br>
+
+                    <input type="number" name="Idade" id="Idade" required placeholder="Idade...." min="0" max="100">
+                    <br>
+
+                    <a href="#link1">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <div id="link1">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>1. Quantas horas por dia, em média, você passa nas redes sociais?</label><br><br>
+
+                    <input type="radio" name="Tempo de uso" id="Menos_de_1h" value="Menos_de_1h" checked>
+                    <label for="Menos_de_1h">Menos de 1 hora</label><br>
+
+                    <input type="radio" name="Tempo de uso" id="1_a_3h" value="1_a_3h">
+                    <label for="1_a_3h">Entre 1 e 3 horas</label><br>
+
+                    <input type="radio" name="Tempo de uso" id="3_a_5h" value="3_a_5h">
+                    <label for="3_a_5h">Entre 3 e 5 horas</label><br>
+
+                    <input type="radio" name="Tempo de uso" id="mais_de_5h" value="mais_de_5h">
+                    <label for="mais_de_5h">Mais de 5 horas</label><br>
+                    <a href="#link0">&lt;Anterior</a>
+                    <a href="#link2">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <div id="link2">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>2. Em uma escala de 1 a 5, o quanto você se distrai com redes sociais *enquanto* está
+                        estudando?</label><br>
+                    <label>(1 = Não me distrai / 5 = Me distrai muito)</label><br><br>
+
+                    <input type="radio" name="escala_distracao" id="P2_1" value="1" required>
+                    <label for="P2_1">1</label><br>
+
+                    <input type="radio" name="escala_distracao" id="P2_2" value="2">
+                    <label for="P2_2">2</label><br>
+
+                    <input type="radio" name="escala_distracao" id="P2_3" value="3">
+                    <label for="P2_3">3</label><br>
+
+                    <input type="radio" name="escala_distracao" id="P2_4" value="4">
+                    <label for="P2_4">4</label><br>
+
+                    <input type="radio" name="escala_distracao" id="P2_5" value="5">
+                    <label for="P2_5">5</label><br>
+                    <a href="#link1">&lt;Anterior</a>
+                    <a href="#link3">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link3">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>3. Onde seu smartphone fica enquanto você estuda?</label><br><br>
+
+                    <input type="radio" name="comportamento_estudo" id="P3_outro_comodo" value="Outro_Comodo" required>
+                    <label for="P3_outro_comodo">Fora do meu alcance.</label><br>
+
+                    <input type="radio" name="comportamento_estudo" id="P3_silencioso" value="Silencioso_Perto">
+                    <label for="P3_silencioso">Perto de mim, mas no silencioso.</label><br>
+
+                    <input type="radio" name="comportamento_estudo" id="P3_checo_frequente" value="Checo_Frequente">
+                    <label for="P3_checo_frequente">Perto de mim, e o checo com frequência.</label><br>
+
+                    <input type="radio" name="comportamento_estudo" id="P3_uso_para_estudar" value="Uso_e_Acesso">
+                    <label for="P3_uso_para_estudar">Uso o celular para estudar e acabo me distriando com as redes sociais.</label><br>
+                    <a href="#link2">&lt;Anterior</a>
+                    <a href="#link4">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link4">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>4. Você já perdeu horas de sono regularmente para ficar navegando nas redes
+                        sociais?</label><br><br>
+
+                    <input type="radio" name="impacto_sono" id="P4_Nunca" value="Nunca" required>
+                    <label for="P4_Nunca">Nunca</label><br>
+
+                    <input type="radio" name="impacto_sono" id="P4_Raramente" value="Raramente">
+                    <label for="P4_Raramente">Raramente (1 a 2 vezes por mês)</label><br>
+
+                    <input type="radio" name="impacto_sono" id="P4_As_vezes" value="As_Vezes">
+                    <label for="P4_As_vezes">Às vezes (1 a 3 vezes por semana)</label><br>
+
+                    <input type="radio" name="impacto_sono" id="P4_Frequentemente" value="Frequentemente">
+                    <label for="P4_Frequentemente">Frequentemente (quase todos os dias)</label><br>
+                    <a href="#link3">&lt;Anterior</a>
+                    <a href="#link5">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link5">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>5. Como você avalia a influência do seu uso de redes sociais em seu desempenho
+                        acadêmico?</label><br><br>
+
+                    <input type="radio" name="percepcao_desempenho" id="P5_Ajuda" value="Ajuda" required>
+                    <label for="P5_Ajuda">Melhora meu desempenho.</label><br>
+
+                    <input type="radio" name="percepcao_desempenho" id="P5_Nao_Influencia" value="Nao_Influencia">
+                    <label for="P5_Nao_Influencia">Não tem influência perceptível.</label><br>
+
+                    <input type="radio" name="percepcao_desempenho" id="P5_Leve_Negativa" value="Leve_Negativa">
+                    <label for="P5_Leve_Negativa">Tem uma leve influência negativa.</label><br>
+
+                    <input type="radio" name="percepcao_desempenho" id="P5_Signif_Negativa" value="Signif_Negativa">
+                    <label for="P5_Signif_Negativa">Tem uma influência negativa significativa.</label><br>
+                    <a href="#link4">&lt;Anterior</a>
+                    <a href="#link6">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link6">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>6. Em uma escala de 1 a 5, concorde com: "O uso excessivo de redes sociais torna mais difícil
+                        para mim manter o foco em tarefas longas, como leituras e trabalhos escolares."</label><br>
+                    <label>(1 = Discordo totalmente / 5 = Concordo totalmente)</label><br><br>
+
+                    <input type="radio" name="escala_foco" id="P6_1" value="1" required>
+                    <label for="P6_1">1</label><br>
+
+                    <input type="radio" name="escala_foco" id="P6_2" value="2">
+                    <label for="P6_2">2</label><br>
+
+                    <input type="radio" name="escala_foco" id="P6_3" value="3">
+                    <label for="P6_3">3</label><br>
+
+                    <input type="radio" name="escala_foco" id="P6_4" value="4">
+                    <label for="P6_4">4</label><br>
+
+                    <input type="radio" name="escala_foco" id="P6_5" value="5">
+                    <label for="P6_5">5</label><br>
+                    <a href="#link5">&lt;Anterior</a>
+                    <a href="#link7">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link7">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>7. Descreva um malefício <b>específico</b> (além da distração imediata) que você percebe que o uso das
+                        redes sociais traz aos seus estudos.</label><br><br>
+                    <textarea name="maleficio_especifico" rows="6" cols="15"
+                        placeholder="Ex: Cansaço mental, procrastinação, sensação de que o tempo passou rápido..."></textarea>
+                    <a href="#link6">&lt;Anterior</a>
+                    <a href="#link8">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link8">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>8. Após passar muito tempo nas redes sociais, você costuma se sentir mais cansado(a) ou menos
+                        disposto(a) a iniciar uma sessão de estudos?</label><br><br>
+
+                    <input type="radio" name="sentimento_pos_uso" id="P8_Sempre" value="Sempre" required>
+                    <label for="P8_Sempre">Sempre/Quase sempre</label><br>
+
+                    <input type="radio" name="sentimento_pos_uso" id="P8_As_vezes" value="As_Vezes">
+                    <label for="P8_As_vezes">Algumas vezes</label><br>
+
+                    <input type="radio" name="sentimento_pos_uso" id="P8_Raramente" value="Raramente">
+                    <label for="P8_Raramente">Raramente/Nunca</label><br>
+                    <a href="#link7">&lt;Anterior</a>
+                    <a href="#link9">Próxima></a>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link9">
+            <div class="formulario">
+                <div class="perguntas">
+                    <label>9. Você já tentou limitar o seu tempo nas redes sociais especificamente para se dedicar maisa os
+                    estudos?</label><br><br>
+
+                    <input type="radio" name="tentativa_reducao" id="P9_Nunca_tentei" value="Nunca_Tentei" required>
+                    <label for="P9_Nunca_tentei">Nunca tentei.</label><br>
+
+                    <input type="radio" name="tentativa_reducao" id="P9_Nao_consegui" value="Nao_Consegui">
+                    <label for="P9_Nao_consegui">Tentei, mas não consegui manter a redução.</label><br>
+
+                    <input type="radio" name="tentativa_reducao" id="P9_Reduzi_um_pouco" value="Reduzi_Um_Pouco">
+                    <label for="P9_Reduzi_um_pouco">Tentei e consegui reduzir um pouco o tempo de uso.</label><br>
+
+                    <input type="radio" name="tentativa_reducao" id="P9_Reduzi_signif" value="Reduzi_Signif">
+                    <label for="P9_Reduzi_signif">Consegui reduzir significativamente o tempo de uso e mantive a
+                        mudança.</label><br>
+                    <a href="#link8">&lt;Anterior</a>
+                    <a href="#link10">Próxima></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="link10">
+            <div class="formulario2">
+                <div class="perguntas">
+                    <label>10. Em momentos de provas importantes ou entrega de trabalhos, o que você tende a
+                        priorizar?</label><br><br>
+
+                    <input type="radio" name="priorizacao_estudos" id="P10_Priorizo_Estudos" value="Priorizo_Estudos" required>
+                    <label for="P10_Priorizo_Estudos">O tempo dedicado aos estudos, limitando as redes.</label><br>
+
+                    <input type="radio" name="priorizacao_estudos" id="P10_Priorizo_Lazer" value="Priorizo_Lazer">
+                    <label for="P10_Priorizo_Lazer">O tempo nas redes sociais/lazer, adiando os estudos.</label><br>
+
+                    <input type="radio" name="priorizacao_estudos" id="P10_Fico_Dividido" value="Fico_Dividido">
+                    <label for="P10_Fico_Dividido">Tento fazer os dois ao mesmo tempo.</label><br>
+                    <a href="#link9">&lt;Anterior</a>
+                        <button type="submit">
+                            Enviar Respostas>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+    </form>
+    </div>
+
+</body>
+
+</html>
